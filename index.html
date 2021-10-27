@@ -1,16 +1,92 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset = "utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Hello World! </title>
-        <link href ="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    </head>
-    <body>
-        <header style="text-align: center;">
-            <br>
-            Hello World 2!
-        </header>
-    </body>
+
+  <head>
+    <!-- Needed for CSS to work -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <!-- JavaScript Examples -->
+
+    
+    <h2>What Can JavaScript Do?</h2>
+
+    <!-- Example 1: Change HTML -->
+    <p id="demo">JavaScript can change HTML content.</p>
+    <button type="button" onclick='Function1()'>Click Me!</button>
+
+      <!-- Example 2: Change attributes (like picture sources!) -->
+    <p>JavaScript can change HTML attribute values.</p>
+    <img id="myImage" src="images/pic_bulboff.gif" style="width:100px">
+
+
+    <button onclick='Function2()'">Turn on the light</button>
+    <button onclick='Function3()'>Turn off the light</button>
+
+    <!-- Example 3: Change style (like colors, size, etc!) -->
+    <p id="example3">JavaScript can change the style of an HTML element.</p>
+
+    <button type="button" onclick="Function4()">Click Me!</button>
+
+
+      <!-- Example 4: Hide (or Show!) an element -->
+    <p id="example4">JavaScript can hide HTML elements.</p>
+
+    <button type="button" onclick="Function5()">Click Me!</button>
+
+
+
+
+      <!-- Header -->
+      <h1 id="myHeader">My Cities</h1>
+      
+      <!-- Cities all follow same format -->
+
+
+      <!-- London -->
+
+      <!-- City Header Bar. onclick makes it a clickable button that toggles below div -->
+      <h2 class="city" onclick="ContentShow('London')">London</h2>
+
+      <!-- div holds the city info text and picture. It is hidden, but can be toggled by button. -->
+      <div id="London" style="display: none">
+        <!-- City text -->
+        <p class ="citytext"> London is the capital of England.</p>
+        <!-- Picture of City -->
+        <img src="images/london.jpeg">
+      </div>
+
+
+    <!-- Paris -->
+
+      <!-- City Header Bar. onclick makes it a clickable button that toggles below div -->  
+      <h2 class="city" onclick="ContentShow('Paris')">Paris</h2>
+      <!-- div holds the city info text and picture. It is hidden, but can be toggled by button. -->
+      <div id="Paris" style="display: none">
+        <!-- City text -->
+        <p class ="citytext">Paris is the capital of France.</p>
+        <!-- Picture of City -->
+        <img src="images/paris.jpeg">
+      </div>
+
+
+
+    <!-- Tokyo -->
+
+      <!-- City Header Bar. onclick makes it a clickable button that toggles below div -->
+      <h2 class="city" onclick="ContentShow('Tokyo')">Tokyo</h2>
+      <!-- div holds the city info text and picture. It is hidden, but can be toggled by button. -->
+      <div id="Tokyo" style="display: none">
+        <!-- City text -->
+        <p class ="citytext">Tokyo is the capital of Japan.</p>
+        <!-- Picture of City -->
+        <img src="images/tokyo.jpeg">
+      </div>
+
+    <!-- Needed for JS to work -->
+    <script src="script.js"></script> 
+
+  </body>
 </html>
